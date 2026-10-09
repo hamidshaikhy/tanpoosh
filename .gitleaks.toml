@@ -1,0 +1,8 @@
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Explicit non-live test fixture passwords; tests never target public services."
+paths = ['''backend[/\\]tests[/\\]''']
+regexTarget = "secret"
+regexes = ['''Sufficiently-Long-Pass-91''', '''wrong-pass-123''']

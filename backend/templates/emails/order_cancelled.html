@@ -1,0 +1,7 @@
+{% extends "emails/_base.html" %}
+{% block content %}
+<p>{{ name }} عزیز، سلام</p>
+<p>سفارش <strong dir="ltr">{{ number }}</strong> لغو شد.</p>
+<p>دلیل: {{ reason }}</p>
+<p>اگر مبلغی پرداخت کرده‌اید، بازپرداخت آن پیگیری و نتیجه به شما اطلاع داده می‌شود.</p>
+{% endblock %}

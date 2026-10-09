@@ -1,0 +1,11 @@
+{% extends "emails/_base.html" %}
+{% block content %}
+<p>{{ name }} عزیز، سلام</p>
+{% if is_test %}<p style="background:#E8E2D6;padding:8px 12px;font-size:13px;">آزمایشی — این پرداخت در محیط تست درگاه انجام شده و پول واقعی جابه‌جا نشده است.</p>{% endif %}
+<p>پرداخت سفارش <strong dir="ltr">{{ number }}</strong> به مبلغ <strong>{{ total }}</strong> تأیید شد.<br>کد پیگیری پرداخت: <span dir="ltr">{{ ref_id }}</span></p>
+{% if review %}<p>پرداخت شما ثبت شده اما تأمین موجودی این سفارش نیاز به بررسی دارد؛ همکاران ما به‌زودی با شما تماس می‌گیرند.</p>{% endif %}
+<table role="presentation" width="100%" style="border-collapse:collapse;font-size:14px;">
+{% for item in items %}<tr><td style="padding:6px 0;border-bottom:1px solid #E8E2D6;">{{ item.name }} — {{ item.color }} — سایز <span dir="ltr">{{ item.size }}</span></td><td style="padding:6px 0;border-bottom:1px solid #E8E2D6;text-align:left;">{{ item.qty }} عدد</td></tr>{% endfor %}
+</table>
+<p style="margin-top:20px;"><a href="{{ base_url }}/account/orders" style="color:#20221F;">مشاهدهٔ سفارش در حساب کاربری</a></p>
+{% endblock %}

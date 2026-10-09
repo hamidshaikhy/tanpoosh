@@ -1,0 +1,6 @@
+{% extends "emails/_base.html" %}
+{% block content %}
+<p>{{ name }} عزیز، سلام</p>
+<p>برای مشاهدهٔ سفارش <strong dir="ltr">{{ number }}</strong> روی دکمهٔ زیر بزنید. این پیوند {{ hours }} ساعت معتبر است.</p>
+{% include "emails/_button.html" with label="مشاهدهٔ سفارش" %}
+{% endblock %}

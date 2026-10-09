@@ -1,0 +1,6 @@
+{% extends "emails/_base.html" %}
+{% block content %}
+<p>{{ name }} عزیز، سلام</p>
+<p>برای تأیید ایمیل حساب کاربری خود در تن‌پوش، روی دکمهٔ زیر بزنید. این پیوند تا {{ hours }} ساعت معتبر است.</p>
+{% include "emails/_button.html" with label="تأیید ایمیل" %}
+{% endblock %}

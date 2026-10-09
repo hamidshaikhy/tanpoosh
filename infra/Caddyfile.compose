@@ -1,0 +1,23 @@
+:8088 {
+	encode zstd gzip
+	header {
+		-Server
+		X-Content-Type-Options nosniff
+	}
+	@staticDirectory path /_next/static
+	header @staticDirectory Content-Security-Policy "default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+	request_body {
+		max_size 12MB
+	}
+	@internal path /internal/*
+	handle @internal {
+		respond "Not Found" 404
+	}
+	@backend path /api/* /media/*
+	handle @backend {
+		reverse_proxy backend:8000
+	}
+	handle {
+		reverse_proxy frontend:3000
+	}
+}

@@ -1,0 +1,39 @@
+# Local development reverse proxy: ONE browser origin (http://localhost:8088)
+#   /api/*, /media/*      -> Django (127.0.0.1:8000)
+#   /internal/*           -> blocked publicly (Django calls Next directly)
+#   everything else       -> Next.js (127.0.0.1:3000)
+{
+	auto_https off
+	admin off
+}
+
+:8088 {
+	bind 127.0.0.1
+	encode zstd gzip
+	header {
+		-Server
+		X-Content-Type-Options nosniff
+	}
+	@staticDirectory path /_next/static
+	header @staticDirectory Content-Security-Policy "default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+
+	request_body {
+		max_size 12MB
+	}
+
+	@internal path /internal/*
+	handle @internal {
+		respond "Not Found" 404
+	}
+
+	@backend path /api/* /media/*
+	handle @backend {
+		reverse_proxy {$BACKEND_UPSTREAM:127.0.0.1:8000} {
+			header_up X-Request-ID {http.request.uuid}
+		}
+	}
+
+	handle {
+		reverse_proxy {$FRONTEND_UPSTREAM:127.0.0.1:3000}
+	}
+}

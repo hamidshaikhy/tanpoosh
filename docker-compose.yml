@@ -1,0 +1,87 @@
+# Optional isolated local stack. Windows portable services remain the tested setup.
+# docker compose --env-file backend/.env --profile dev up --build
+x-backend: &backend
+  build: {context: ., dockerfile: backend/Dockerfile}
+  env_file: backend/.env
+  environment: &backend-env
+    DJANGO_SETTINGS_MODULE: config.settings.development
+    DJANGO_ALLOWED_HOSTS: localhost,127.0.0.1,backend
+    POSTGRES_HOST: postgres
+    REDIS_URL: redis://redis:6379/0
+    CACHE_REDIS_URL: redis://redis:6379/1
+    RATELIMIT_REDIS_URL: redis://redis:6379/2
+    EMAIL_HOST: mailpit
+    EMAIL_PORT: 1025
+    FRONTEND_INTERNAL_URL: http://frontend:3000
+    PUBLIC_BASE_URL: http://localhost:8088
+    CSRF_TRUSTED_ORIGINS: http://localhost:8088
+    PAYMENT_PROVIDER: mock
+    PAYMENT_MOCK_ENABLED: 'true'
+  volumes: [media:/app/backend/media, staticfiles:/app/backend/staticfiles]
+  depends_on:
+    postgres: {condition: service_healthy}
+    redis: {condition: service_healthy}
+  restart: unless-stopped
+
+services:
+  postgres:
+    image: postgres:18
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-tanpoosh}
+      POSTGRES_USER: ${POSTGRES_USER:-tanpoosh}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Supply the local database password}
+    volumes: [pgdata:/var/lib/postgresql]
+    healthcheck: {test: ['CMD-SHELL', 'pg_isready -U "$${POSTGRES_USER}" -d "$${POSTGRES_DB}"'], interval: 5s, timeout: 5s, retries: 12}
+  redis:
+    image: redis:8-alpine
+    command: ['redis-server', '--appendonly', 'yes']
+    volumes: [redisdata:/data]
+    healthcheck: {test: ['CMD', 'redis-cli', 'ping'], interval: 5s, timeout: 3s, retries: 12}
+  mailpit:
+    image: axllent/mailpit:v1.29
+    profiles: [dev]
+    ports: ['127.0.0.1:8025:8025']
+  migrate:
+    <<: *backend
+    command: ['python', 'manage.py', 'migrate', '--noinput']
+    restart: 'no'
+  backend:
+    <<: *backend
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    healthcheck:
+      test: ['CMD', 'python', '-c', "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/v1/health/ready', timeout=5)"]
+      interval: 10s
+      timeout: 6s
+      retries: 12
+  worker:
+    <<: *backend
+    command: ['celery', '-A', 'config', 'worker', '-l', 'info']
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+  beat:
+    <<: *backend
+    command: ['celery', '-A', 'config', 'beat', '-l', 'info', '--schedule', '/tmp/celerybeat-schedule']
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+  frontend:
+    build: {context: ., dockerfile: frontend/Dockerfile}
+    environment:
+      INTERNAL_API_URL: http://backend:8000
+      REVALIDATE_SECRET: ${FRONTEND_REVALIDATE_SECRET:?Supply revalidation secret}
+    healthcheck: {test: ['CMD', 'node', '-e', "fetch('http://127.0.0.1:3000').then(r=>process.exit(r.ok?0:1))"], interval: 10s, timeout: 5s, retries: 12}
+    restart: unless-stopped
+  caddy:
+    image: caddy:2-alpine
+    ports: ['127.0.0.1:8088:8088']
+    volumes: ['./infra/Caddyfile.compose:/etc/caddy/Caddyfile:ro']
+    depends_on:
+      backend: {condition: service_healthy}
+      frontend: {condition: service_healthy}
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  redisdata:
+  media:
+  staticfiles:

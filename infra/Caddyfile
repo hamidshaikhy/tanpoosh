@@ -1,0 +1,31 @@
+# Optional HTTPS deployment template; never used by the local launcher.
+{$SITE_DOMAIN} {
+	encode zstd gzip
+	request_body {
+		max_size 12MB
+	}
+	header {
+		Strict-Transport-Security "max-age=2592000"
+		-Server
+		X-Content-Type-Options nosniff
+	}
+	@staticDirectory path /_next/static
+	header @staticDirectory Content-Security-Policy "default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+	@internal path /internal/*
+	handle @internal {
+		respond "Not Found" 404
+	}
+	@api path /api/*
+	handle @api {
+		reverse_proxy backend:8000
+	}
+	@media path /media/*
+	handle @media {
+		root * /srv/uploads
+		file_server
+		header X-Content-Type-Options nosniff
+	}
+	handle {
+		reverse_proxy frontend:3000
+	}
+}

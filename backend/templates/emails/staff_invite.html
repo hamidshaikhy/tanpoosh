@@ -1,0 +1,7 @@
+{% extends "emails/_base.html" %}
+{% block content %}
+<p>{{ name }} عزیز، سلام</p>
+<p>برای شما در پنل مدیریت تن‌پوش حسابی با نقش «{{ role }}» ساخته شد.<br>نام کاربری: <strong dir="ltr">{{ username }}</strong></p>
+<p>برای تعیین رمز عبور روی دکمهٔ زیر بزنید. این پیوند محدود و یک‌بارمصرف است. پس از ورود، راه‌اندازی تأیید دومرحله‌ای لازم است.</p>
+{% include "emails/_button.html" with label="تعیین رمز عبور" %}
+{% endblock %}

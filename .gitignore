@@ -1,0 +1,66 @@
+# Local portable tools (Postgres/Redis/Mailpit binaries, local data)
+.local-tools/
+
+# Secrets and local credentials — never commit
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.local
+**/.env.*.local
+!**/.env.example
+*.credentials.txt
+local-credentials/
+backend/.local-credentials/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+*.egg-info/
+
+# Backend runtime data
+backend/media/
+backend/staticfiles/
+backend/celerybeat-schedule*
+backend/backups/
+backend/.test-media/
+
+# Node / Next
+node_modules/
+frontend/.next/
+frontend/.next-production/
+frontend/out/
+frontend/test-results/
+frontend/playwright-report/
+frontend/blob-report/
+frontend/playwright/.cache/
+frontend/next-env.d.ts
+*.tsbuildinfo
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Logs
+*.log
+logs/
+.playwright-mcp/
+
+# Local review material and design references
+references/
+SECURITY_REPORT.md
+TEST_REPORT.md
+docs/CODEX_HANDOFF.md
+docs/IMAGE_PROMPTS.json
+docs/STUDIO_HEAD_PROMPTS.json
+docs/STUDIO_IMAGE_PROMPTS.json

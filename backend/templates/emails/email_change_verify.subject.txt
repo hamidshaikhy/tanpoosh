@@ -1,0 +1,1 @@
+{% autoescape off %}تأیید ایمیل جدید حساب تن‌پوش{% endautoescape %}

@@ -1,0 +1,524 @@
+{
+  "version": 2,
+  "mode": "layers",
+  "notice": "پیش‌نمایش استایل از عکس‌های آماده روی یک مدل ثابت ساخته می‌شود.",
+  "model": {
+    "id": "lorenzo",
+    "name": "مدل تن‌پوش",
+    "file": "/studio-images/model-reference.webp",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 85846
+  },
+  "garments": [
+    {
+      "id": "basic-tee",
+      "label": "تیشرت ساده",
+      "slot": "top",
+      "origin": "AI generated photographic layers matched to the fixed TANPOOSH model",
+      "colors": {
+        "ivory": {
+          "file": "/studio-images/basic-tee/ivory-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 49872,
+          "placement": {
+            "scale": 0.87544484,
+            "scale_y": 0.916666667,
+            "x": 0.062308858,
+            "y": 0.016818576
+          }
+        },
+        "grey": {
+          "file": "/studio-images/basic-tee/grey-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 206062,
+          "placement": {
+            "scale": 0.516806723,
+            "scale_y": 0.547069272,
+            "x": 0.238365366,
+            "y": 0.082991045
+          }
+        },
+        "charcoal": {
+          "file": "/studio-images/basic-tee/charcoal-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 174664,
+          "placement": {
+            "scale": 0.502040816,
+            "scale_y": 0.542731278,
+            "x": 0.248985571,
+            "y": 0.105146384
+          }
+        },
+        "black": {
+          "file": "/studio-images/basic-tee/black-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 84428,
+          "placement": {
+            "scale": 0.608408904,
+            "scale_y": 0.642335766,
+            "x": 0.194182167,
+            "y": 0.03841621
+          }
+        }
+      }
+    },
+    {
+      "id": "tailored-trousers",
+      "label": "شلوار پارچه‌ای",
+      "slot": "bottom",
+      "origin": "AI generated photographic layers matched to the fixed TANPOOSH model",
+      "colors": {
+        "black": {
+          "file": "/studio-images/tailored-trousers/black-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 29496,
+          "placement": {
+            "scale": 1.003412969,
+            "scale_y": 1,
+            "x": -0.004156223,
+            "y": 0
+          }
+        },
+        "charcoal": {
+          "file": "/studio-images/tailored-trousers/charcoal-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 49154,
+          "placement": {
+            "scale": 0.913043478,
+            "scale_y": 0.94757536,
+            "x": 0.040803329,
+            "y": 0.027744785
+          }
+        },
+        "light-grey": {
+          "file": "/studio-images/tailored-trousers/light-grey-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 49356,
+          "placement": {
+            "scale": 1,
+            "scale_y": 0.997241379,
+            "x": -0.002929688,
+            "y": 0.002368894
+          }
+        }
+      }
+    },
+    {
+      "id": "chelsea-boots",
+      "label": "بوت چرمی",
+      "slot": "shoes",
+      "origin": "AI generated photographic layers matched to the fixed TANPOOSH model",
+      "colors": {
+        "black": {
+          "file": "/studio-images/chelsea-boots/black-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 30986,
+          "placement": {
+            "scale": 0.565723794,
+            "scale_y": 0.565723794,
+            "x": 0.214652012,
+            "y": 0.385392835
+          }
+        },
+        "brown": {
+          "file": "/studio-images/chelsea-boots/brown-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 33100,
+          "placement": {
+            "scale": 0.547504026,
+            "scale_y": 0.547504026,
+            "x": 0.22277262,
+            "y": 0.405396622
+          }
+        }
+      }
+    },
+    {
+      "id": "hoodie",
+      "label": "هودی",
+      "slot": "top",
+      "origin": "AI generated photographic layers matched to the fixed TANPOOSH model",
+      "colors": {
+        "grey": {
+          "file": "/studio-images/hoodie/grey-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 222516,
+          "placement": {
+            "scale": 0.536337209,
+            "scale_y": 0.539404553,
+            "x": 0.230104668,
+            "y": 0.081244527
+          }
+        },
+        "ivory": {
+          "file": "/studio-images/hoodie/ivory-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 111576,
+          "placement": {
+            "scale": 0.547071905,
+            "scale_y": 0.532411409,
+            "x": 0.225399891,
+            "y": 0.107900731
+          }
+        },
+        "black": {
+          "file": "/studio-images/hoodie/black-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 106688,
+          "placement": {
+            "scale": 0.530935252,
+            "scale_y": 0.546583851,
+            "x": 0.235141496,
+            "y": 0.080211568
+          }
+        }
+      }
+    },
+    {
+      "id": "polo-shirt",
+      "label": "پولوشرت پنبه‌ای",
+      "slot": "top",
+      "origin": "AI generated photographic layers matched to the fixed TANPOOSH model",
+      "colors": {
+        "navy": {
+          "file": "/studio-images/polo-shirt/navy-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 196166,
+          "placement": {
+            "scale": 0.490039841,
+            "scale_y": 0.509933775,
+            "x": 0.253275959,
+            "y": 0.090796599
+          }
+        },
+        "ecru": {
+          "file": "/studio-images/polo-shirt/ecru-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 159240,
+          "placement": {
+            "scale": 0.502040816,
+            "scale_y": 0.538932633,
+            "x": 0.245308514,
+            "y": 0.077102016
+          }
+        }
+      }
+    },
+    {
+      "id": "oxford-shirt",
+      "label": "پیراهن آکسفورد",
+      "slot": "top",
+      "origin": "AI generated photographic layers matched to the fixed TANPOOSH model",
+      "colors": {
+        "white": {
+          "file": "/studio-images/oxford-shirt/white-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 38030,
+          "placement": {
+            "scale": 0.984,
+            "scale_y": 0.995153473,
+            "x": 0.007976563,
+            "y": 0.00271355
+          }
+        },
+        "sky": {
+          "file": "/studio-images/oxford-shirt/sky-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 96436,
+          "placement": {
+            "scale": 0.563789152,
+            "scale_y": 0.573556797,
+            "x": 0.215677073,
+            "y": 0.053179314
+          }
+        }
+      }
+    },
+    {
+      "id": "crew-knit",
+      "label": "بافت یقه‌گرد",
+      "slot": "top",
+      "origin": "AI generated photographic layers matched to the fixed TANPOOSH model",
+      "colors": {
+        "oatmeal": {
+          "file": "/studio-images/crew-knit/oatmeal-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 182922,
+          "placement": {
+            "scale": 0.577464789,
+            "scale_y": 0.572490706,
+            "x": 0.210930623,
+            "y": 0.073875077
+          }
+        },
+        "navy": {
+          "file": "/studio-images/crew-knit/navy-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 149590,
+          "placement": {
+            "scale": 0.552808989,
+            "scale_y": 0.576239476,
+            "x": 0.224155109,
+            "y": 0.048183174
+          }
+        }
+      }
+    },
+    {
+      "id": "chino-trousers",
+      "label": "شلوار کتان",
+      "slot": "bottom",
+      "origin": "AI generated photographic layers matched to the fixed TANPOOSH model",
+      "colors": {
+        "sand": {
+          "file": "/studio-images/chino-trousers/sand-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 35802,
+          "placement": {
+            "scale": 1.006849315,
+            "scale_y": 1.002773925,
+            "x": -0.007357663,
+            "y": -0.000423493
+          }
+        },
+        "olive": {
+          "file": "/studio-images/chino-trousers/olive-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 34642,
+          "placement": {
+            "scale": 1.024390244,
+            "scale_y": 1.015449438,
+            "x": -0.013695694,
+            "y": -0.004672504
+          }
+        }
+      }
+    },
+    {
+      "id": "straight-jeans",
+      "label": "شلوار جین راسته",
+      "slot": "bottom",
+      "origin": "AI generated photographic layers matched to the fixed TANPOOSH model",
+      "colors": {
+        "indigo": {
+          "file": "/studio-images/straight-jeans/indigo-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 70158,
+          "placement": {
+            "scale": 0.924528302,
+            "scale_y": 0.9730821,
+            "x": 0.03593013,
+            "y": 0.015512842
+          }
+        },
+        "black": {
+          "file": "/studio-images/straight-jeans/black-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 48906,
+          "placement": {
+            "scale": 0.993243243,
+            "scale_y": 0.993131868,
+            "x": 0.002408414,
+            "y": 0.003311548
+          }
+        }
+      }
+    },
+    {
+      "id": "leather-sneakers",
+      "label": "کتانی چرمی",
+      "slot": "shoes",
+      "origin": "AI generated photographic layers matched to the fixed TANPOOSH model",
+      "colors": {
+        "white": {
+          "file": "/studio-images/leather-sneakers/white-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 26338,
+          "placement": {
+            "scale": 0.532081377,
+            "scale_y": 0.532081377,
+            "x": 0.235258338,
+            "y": 0.421220902
+          }
+        },
+        "black": {
+          "file": "/studio-images/leather-sneakers/black-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 47494,
+          "placement": {
+            "scale": 0.44213264,
+            "scale_y": 0.44213264,
+            "x": 0.270082392,
+            "y": 0.495121844
+          }
+        }
+      }
+    },
+    {
+      "id": "knit-polo",
+      "label": "پولوی بافت شیری",
+      "slot": "top",
+      "origin": "AI generated photographic layers matched to the fixed TANPOOSH model",
+      "colors": {
+        "ivory": {
+          "file": "/studio-images/knit-polo/ivory-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 191096,
+          "placement": {
+            "scale": 0.51285615,
+            "scale_y": 0.527849186,
+            "x": 0.243734798,
+            "y": 0.082563464
+          }
+        }
+      }
+    },
+    {
+      "id": "linen-shirt",
+      "label": "پیراهن لینن شیری",
+      "slot": "top",
+      "origin": "AI generated photographic layers matched to the fixed TANPOOSH model",
+      "colors": {
+        "ecru": {
+          "file": "/studio-images/linen-shirt/ecru-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 166918,
+          "placement": {
+            "scale": 0.511789182,
+            "scale_y": 0.5,
+            "x": 0.24314036,
+            "y": 0.095377604
+          }
+        }
+      }
+    },
+    {
+      "id": "suede-loafers",
+      "label": "لوفر جیر شکلاتی",
+      "slot": "shoes",
+      "origin": "AI generated photographic layers matched to the fixed TANPOOSH model",
+      "colors": {
+        "brown": {
+          "file": "/studio-images/suede-loafers/brown-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 26760,
+          "placement": {
+            "scale": 0.547504026,
+            "scale_y": 0.547504026,
+            "x": 0.222237948,
+            "y": 0.401119247
+          }
+        }
+      }
+    },
+    {
+      "id": "derby-shoes",
+      "label": "کفش دربی چرمی",
+      "slot": "shoes",
+      "origin": "AI generated photographic layers matched to the fixed TANPOOSH model",
+      "colors": {
+        "black": {
+          "file": "/studio-images/derby-shoes/black-layer.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 22138,
+          "placement": {
+            "scale": 0.582191781,
+            "scale_y": 0.582191781,
+            "x": 0.20719847,
+            "y": 0.359655929
+          }
+        }
+      }
+    },
+    {
+      "id": "tortoise-sunglasses",
+      "label": "عینک لاک‌پشتی کلاسیک",
+      "slot": "accessory",
+      "origin": "AI generated photographic layers matched to the fixed TANPOOSH model",
+      "colors": {
+        "tortoise": {
+          "file": "/studio-images/tortoise-sunglasses/tortoise-head-v2.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 329460,
+          "placement": {
+            "scale": 1,
+            "scale_y": 1,
+            "x": 0,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "black-sunglasses",
+      "label": "عینک مشکی کلاسیک",
+      "slot": "accessory",
+      "origin": "AI generated photographic layers matched to the fixed TANPOOSH model",
+      "colors": {
+        "black": {
+          "file": "/studio-images/black-sunglasses/black-head-v2.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 323658,
+          "placement": {
+            "scale": 1,
+            "scale_y": 1,
+            "x": 0,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "aviator-sunglasses",
+      "label": "عینک خلبانی طلایی",
+      "slot": "accessory",
+      "origin": "AI generated photographic layers matched to the fixed TANPOOSH model",
+      "colors": {
+        "gold": {
+          "file": "/studio-images/aviator-sunglasses/gold-head-v2.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 399542,
+          "placement": {
+            "scale": 1,
+            "scale_y": 1,
+            "x": 0,
+            "y": 0
+          }
+        }
+      }
+    }
+  ],
+  "looks": []
+}

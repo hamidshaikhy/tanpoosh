@@ -1,0 +1,1059 @@
+{
+  "_note": "Development seed data. Copy, prices and stock are illustrative and editable in /manage. Not production transactions.",
+  "categories": [
+    {
+      "slug": "jackets",
+      "name": "کاپشن",
+      "description": "کاپشن و رویی‌های سبک برای هر روز",
+      "sort_order": 1
+    },
+    {
+      "slug": "t-shirts",
+      "name": "تیشرت",
+      "description": "تیشرت و پولوی پنبه‌ای",
+      "sort_order": 2
+    },
+    {
+      "slug": "trousers",
+      "name": "شلوار",
+      "description": "شلوار پارچه‌ای، کتان و جین",
+      "sort_order": 3
+    },
+    {
+      "slug": "shoes",
+      "name": "کفش",
+      "description": "بوت و کتانی چرمی",
+      "sort_order": 4
+    },
+    {
+      "slug": "knitwear",
+      "name": "هودی و بافت",
+      "description": "لایه‌های گرم و نرم",
+      "sort_order": 5
+    },
+    {
+      "slug": "shirts",
+      "name": "پیراهن",
+      "description": "پیراهن‌های روزمره",
+      "sort_order": 6
+    },
+    {
+      "slug": "sunglasses",
+      "name": "عینک آفتابی",
+      "description": "عینک‌های کلاسیک برای تکمیل استایل",
+      "sort_order": 7
+    },
+    {
+      "slug": "tailoring",
+      "name": "کت کلاسیک",
+      "description": "رویه‌های خوش‌دوخت و ماندگار",
+      "sort_order": 8
+    }
+  ],
+  "collections": [
+    {
+      "slug": "everyday-essentials",
+      "name": "ضروری‌های روزمره",
+      "description": "تکه‌های پایه‌ای که با هم هماهنگ‌اند و هر روز پوشیده می‌شوند.",
+      "sort_order": 1
+    },
+    {
+      "slug": "autumn-1405",
+      "name": "پاییز ۱۴۰۵",
+      "description": "لایه‌های سبک و رنگ‌های خاکی برای روزهای خنک.",
+      "sort_order": 2
+    },
+    {
+      "slug": "monochrome",
+      "name": "تک‌رنگ مشکی",
+      "description": "استایل مینیمال با تکه‌های مشکی و ذغالی.",
+      "sort_order": 3
+    },
+    {
+      "slug": "old-money",
+      "name": "کلاسیک ماندگار",
+      "description": "بافت‌های ظریف، رنگ‌های آرام و برش‌های کلاسیک؛ کالکشن الهام‌گرفته از استایل اولد مانی.",
+      "sort_order": 0
+    }
+  ],
+  "shipping_methods": [
+    {
+      "code": "standard",
+      "name": "ارسال عادی (پست)",
+      "description": "تحویل با پست به سراسر کشور",
+      "eta_text": "۳ تا ۵ روز کاری",
+      "fee_toman": 150000,
+      "free_threshold_toman": 5000000,
+      "sort_order": 1
+    },
+    {
+      "code": "express",
+      "name": "ارسال سریع (پیک)",
+      "description": "تحویل سریع؛ همیشه با هزینهٔ ارسال",
+      "eta_text": "۱ تا ۲ روز کاری",
+      "fee_toman": 250000,
+      "free_threshold_toman": null,
+      "sort_order": 2
+    }
+  ],
+  "coupons": [
+    {
+      "code": "TAN10",
+      "description": "۱۰٪ تخفیف کالا (نمونهٔ آزمایشی، قابل ویرایش)",
+      "kind": "percent",
+      "value": 10,
+      "min_subtotal_toman": 0,
+      "usage_limit": null,
+      "per_customer_limit": 3
+    }
+  ],
+  "products": [
+    {
+      "slug": "bomber-jacket",
+      "name": "کاپشن بمبر",
+      "category": "jackets",
+      "collections": [
+        "autumn-1405",
+        "monochrome"
+      ],
+      "short_description": "بمبر کلاسیک با یقه و سرآستین کشباف و زیپ فلزی.",
+      "description": "کاپشن بمبر با فرم کمی آزاد، یقه و سرآستین کشباف و جیب زیپ‌دار روی آستین. مناسب لایه‌پوشی روی تیشرت یا هودی در روزهای خنک.",
+      "materials": "رویه: نایلون مات\nآستر: پلی‌استر\n(اطلاعات نمونه؛ پیش از فروش با برچسب واقعی کالا تطبیق دهید)",
+      "care": "شست‌وشو با آب سرد و دور ملایم\nاتو نکنید\nخشک‌شویی مجاز",
+      "fit_notes": "فرم کمی آزاد؛ اگر بین دو سایز هستید سایز کوچک‌تر را انتخاب کنید.",
+      "size_chart": "tops",
+      "is_new": true,
+      "studio_slot": "outerwear",
+      "studio_asset": "bomber-jacket",
+      "sort_order": 1,
+      "price_toman": 4800000,
+      "sku": "BMB",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        {
+          "code": "black",
+          "name": "مشکی",
+          "hex": "#1E1F1E",
+          "image": "photoreal/bomber-black.png"
+        },
+        {
+          "code": "olive",
+          "name": "زیتونی",
+          "hex": "#5B5B3E",
+          "image": "photoreal/bomber-olive.png"
+        },
+        {
+          "code": "grey",
+          "name": "طوسی",
+          "hex": "#8D8E8A",
+          "image": "photoreal/bomber-grey.png"
+        }
+      ],
+      "stock": {
+        "default": 8,
+        "overrides": {
+          "olive:XXL": 0,
+          "grey:S": 2
+        }
+      }
+    },
+    {
+      "slug": "basic-tee",
+      "name": "تیشرت ساده",
+      "category": "t-shirts",
+      "collections": [
+        "everyday-essentials"
+      ],
+      "short_description": "تیشرت یقه‌گرد پنبه‌ای با دوخت تمیز.",
+      "description": "تیشرت یقه‌گرد با پارچهٔ پنبه‌ای ضخیم‌تر از معمول و دوخت دوبل در لبه‌ها؛ پایهٔ هر استایل روزمره.",
+      "materials": "۱۰۰٪ پنبه (اطلاعات نمونه)",
+      "care": "شست‌وشو با آب حداکثر ۳۰ درجه\nبا رنگ‌های مشابه بشویید\nاتو با حرارت متوسط",
+      "fit_notes": "فرم استاندارد؛ سایز معمول خود را انتخاب کنید.",
+      "size_chart": "tops",
+      "is_new": false,
+      "studio_slot": "top",
+      "studio_asset": "basic-tee",
+      "sort_order": 2,
+      "price_toman": 1200000,
+      "sku": "TEE",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        {
+          "code": "ivory",
+          "name": "شیری",
+          "hex": "#EFE9DD",
+          "image": "photoreal/tee-ivory.png"
+        },
+        {
+          "code": "grey",
+          "name": "طوسی",
+          "hex": "#9A9A96",
+          "image": "photoreal/tee-grey.png"
+        },
+        {
+          "code": "charcoal",
+          "name": "ذغالی",
+          "hex": "#4A4B4A",
+          "image": "photoreal/tee-charcoal.png"
+        },
+        {
+          "code": "black",
+          "name": "مشکی",
+          "hex": "#262626",
+          "image": "photoreal/tee-black.png"
+        }
+      ],
+      "stock": {
+        "default": 14,
+        "overrides": {
+          "charcoal:XXL": 1
+        }
+      }
+    },
+    {
+      "slug": "tailored-trousers",
+      "name": "شلوار پارچه‌ای",
+      "category": "trousers",
+      "collections": [
+        "everyday-essentials",
+        "monochrome",
+        "old-money"
+      ],
+      "short_description": "شلوار پارچه‌ای راسته با خط اتوی ثابت.",
+      "description": "شلوار پارچه‌ای با فرم راسته، کمر ساده و خط اتوی جلو. هم با کفش رسمی هماهنگ است و هم با کتانی.",
+      "materials": "پلی‌استر و ویسکوز (اطلاعات نمونه)",
+      "care": "شست‌وشو با دور ملایم یا خشک‌شویی\nاتو از پشت پارچه",
+      "fit_notes": "فرم راسته؛ قد شلوار برای قد ۱۷۵ تا ۱۸۵ سانتی‌متر تنظیم شده است.",
+      "size_chart": "bottoms",
+      "is_new": false,
+      "studio_slot": "bottom",
+      "studio_asset": "tailored-trousers",
+      "sort_order": 3,
+      "price_toman": 3200000,
+      "sku": "TRS",
+      "sizes": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "36",
+        "38"
+      ],
+      "colors": [
+        {
+          "code": "black",
+          "name": "مشکی",
+          "hex": "#1F2020",
+          "image": "photoreal/trousers-black.png"
+        },
+        {
+          "code": "charcoal",
+          "name": "ذغالی",
+          "hex": "#4B4C4C",
+          "image": "photoreal/trousers-charcoal.png"
+        },
+        {
+          "code": "light-grey",
+          "name": "طوسی روشن",
+          "hex": "#A6A49E",
+          "image": "photoreal/trousers-light-grey.png"
+        }
+      ],
+      "stock": {
+        "default": 6,
+        "overrides": {
+          "light-grey:38": 0,
+          "black:32": 3
+        }
+      }
+    },
+    {
+      "slug": "chelsea-boots",
+      "name": "بوت چرمی",
+      "category": "shoes",
+      "collections": [
+        "autumn-1405",
+        "monochrome"
+      ],
+      "short_description": "بوت چلسی چرمی با کش کناری و زیره‌ی آج‌دار.",
+      "description": "بوت چلسی با رویهٔ چرم براق، کش کناری برای پوشیدن آسان و زیرهٔ آج‌دار مناسب پیاده‌روی شهری.",
+      "materials": "رویه: چرم گاوی\nزیره: لاستیک (اطلاعات نمونه)",
+      "care": "با دستمال نرم تمیز کنید\nاز واکس بی‌رنگ استفاده کنید\nدور از حرارت مستقیم خشک کنید",
+      "fit_notes": "قالب استاندارد؛ برای پای پهن نیم سایز بزرگ‌تر انتخاب کنید.",
+      "size_chart": "shoes",
+      "is_new": false,
+      "studio_slot": "shoes",
+      "studio_asset": "chelsea-boots",
+      "sort_order": 4,
+      "price_toman": 4000000,
+      "sku": "BOT",
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45"
+      ],
+      "colors": [
+        {
+          "code": "black",
+          "name": "مشکی",
+          "hex": "#151515",
+          "image": "photoreal/boots-black.png"
+        },
+        {
+          "code": "brown",
+          "name": "قهوه‌ای",
+          "hex": "#5A3B26",
+          "image": "photoreal/boots-brown.png"
+        }
+      ],
+      "stock": {
+        "default": 5,
+        "overrides": {
+          "brown:45": 0,
+          "black:42": 2
+        }
+      }
+    },
+    {
+      "slug": "hoodie",
+      "name": "هودی",
+      "category": "knitwear",
+      "collections": [
+        "everyday-essentials",
+        "autumn-1405"
+      ],
+      "short_description": "هودی کلاه‌دار با جیب کانگورویی.",
+      "description": "هودی با پارچهٔ داخل‌کرکی، کلاه دولایه و جیب کانگورویی. برای روزهای خنک تنها یا زیر کاپشن.",
+      "materials": "پنبه و پلی‌استر، داخل کرکی (اطلاعات نمونه)",
+      "care": "شست‌وشو پشت‌ورو با آب سرد\nخشک‌کن با حرارت کم",
+      "fit_notes": "فرم آزاد؛ برای فرم جذب‌تر یک سایز کوچک‌تر بردارید.",
+      "size_chart": "tops",
+      "is_new": true,
+      "studio_slot": "top",
+      "studio_asset": "hoodie",
+      "sort_order": 5,
+      "price_toman": 2600000,
+      "sku": "HOD",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        {
+          "code": "grey",
+          "name": "طوسی ملانژ",
+          "hex": "#8F8F8C",
+          "image": "photoreal/hoodie-grey.png"
+        },
+        {
+          "code": "ivory",
+          "name": "شیری",
+          "hex": "#E6DFD2",
+          "image": "photoreal/hoodie-ivory.png"
+        },
+        {
+          "code": "black",
+          "name": "مشکی",
+          "hex": "#2A2A2A",
+          "image": "photoreal/hoodie-black.png"
+        }
+      ],
+      "stock": {
+        "default": 9,
+        "overrides": {
+          "ivory:S": 0
+        }
+      }
+    },
+    {
+      "slug": "overshirt",
+      "name": "اورشرت کتان",
+      "category": "jackets",
+      "collections": [
+        "autumn-1405"
+      ],
+      "short_description": "اورشرت کتان با دو جیب سینه؛ لایهٔ میانی همه‌کاره.",
+      "description": "اورشرت با پارچهٔ کتان ضخیم، دکمه‌های مات و دو جیب سینه. روی تیشرت باز یا بسته پوشیده می‌شود.",
+      "materials": "۱۰۰٪ پنبه کتان (اطلاعات نمونه)",
+      "care": "شست‌وشو با آب سرد\nاتو با حرارت متوسط",
+      "fit_notes": "فرم آزاد برای لایه‌پوشی.",
+      "size_chart": "tops",
+      "is_new": true,
+      "studio_slot": "outerwear",
+      "studio_asset": "overshirt",
+      "sort_order": 6,
+      "price_toman": 3100000,
+      "sku": "OVS",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        {
+          "code": "khaki",
+          "name": "خاکی",
+          "hex": "#8A7F62",
+          "image": "photoreal/overshirt-khaki.png"
+        },
+        {
+          "code": "charcoal",
+          "name": "ذغالی",
+          "hex": "#3E3F3D",
+          "image": "photoreal/overshirt-charcoal.png"
+        }
+      ],
+      "stock": {
+        "default": 7,
+        "overrides": {}
+      }
+    },
+    {
+      "slug": "puffer-jacket",
+      "name": "کاپشن پافر",
+      "category": "jackets",
+      "collections": [
+        "autumn-1405"
+      ],
+      "short_description": "کاپشن پافر سبک با یقهٔ ایستاده.",
+      "description": "کاپشن پافر کوتاه با لایهٔ عایق سبک، یقهٔ ایستاده و جیب‌های زیپ‌دار؛ برای سرمای جدی‌تر.",
+      "materials": "رویه: نایلون\nلایهٔ عایق: الیاف مصنوعی (اطلاعات نمونه)",
+      "care": "شست‌وشو با دور ملایم و آب سرد\nخشک‌کن با حرارت کم",
+      "fit_notes": "فرم استاندارد؛ برای لایه‌پوشی ضخیم یک سایز بزرگ‌تر.",
+      "size_chart": "tops",
+      "is_new": false,
+      "studio_slot": "outerwear",
+      "studio_asset": "puffer-jacket",
+      "sort_order": 7,
+      "price_toman": 5900000,
+      "sku": "PUF",
+      "sizes": [
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        {
+          "code": "black",
+          "name": "مشکی",
+          "hex": "#1C1D1C",
+          "image": "photoreal/puffer-black.png"
+        },
+        {
+          "code": "sand",
+          "name": "شنی",
+          "hex": "#C9BBA0",
+          "image": "photoreal/puffer-sand.png"
+        }
+      ],
+      "stock": {
+        "default": 4,
+        "overrides": {
+          "sand:XXL": 0
+        }
+      }
+    },
+    {
+      "slug": "polo-shirt",
+      "name": "پولوشرت پنبه‌ای",
+      "category": "t-shirts",
+      "collections": [
+        "everyday-essentials",
+        "old-money"
+      ],
+      "short_description": "پولوشرت پیکه با یقه و دکمهٔ سه‌تایی.",
+      "description": "پولوشرت با بافت پیکه، یقهٔ کشباف و سه دکمه؛ یک قدم رسمی‌تر از تیشرت.",
+      "materials": "پنبهٔ پیکه (اطلاعات نمونه)",
+      "care": "شست‌وشو با آب حداکثر ۳۰ درجه\nاتو با حرارت متوسط",
+      "fit_notes": "فرم استاندارد.",
+      "size_chart": "tops",
+      "is_new": false,
+      "studio_slot": "top",
+      "studio_asset": "polo-shirt",
+      "sort_order": 8,
+      "price_toman": 1650000,
+      "sku": "POL",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        {
+          "code": "navy",
+          "name": "سرمه‌ای",
+          "hex": "#26304A",
+          "image": "photoreal/polo-navy.png"
+        },
+        {
+          "code": "ecru",
+          "name": "نخودی",
+          "hex": "#E4DAC6",
+          "image": "photoreal/polo-ecru.png"
+        }
+      ],
+      "stock": {
+        "default": 10,
+        "overrides": {}
+      }
+    },
+    {
+      "slug": "oxford-shirt",
+      "name": "پیراهن آکسفورد",
+      "category": "shirts",
+      "collections": [
+        "everyday-essentials",
+        "old-money"
+      ],
+      "short_description": "پیراهن آکسفورد یقه‌دکمه‌دار برای هر روز.",
+      "description": "پیراهن آکسفورد با یقهٔ دکمه‌دار و جیب سینه؛ با شلوار پارچه‌ای یا جین خوب می‌نشیند.",
+      "materials": "پنبهٔ آکسفورد (اطلاعات نمونه)",
+      "care": "شست‌وشو با آب ۳۰ درجه\nاتو در حالت نیمه‌مرطوب",
+      "fit_notes": "فرم معمولی؛ آستین برای قد متوسط تا بلند.",
+      "size_chart": "tops",
+      "is_new": false,
+      "studio_slot": "top",
+      "studio_asset": "oxford-shirt",
+      "sort_order": 9,
+      "price_toman": 2100000,
+      "sku": "OXF",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        {
+          "code": "white",
+          "name": "سفید",
+          "hex": "#F3F1EC",
+          "image": "photoreal/oxford-white.png"
+        },
+        {
+          "code": "sky",
+          "name": "آبی آسمانی",
+          "hex": "#A9C0D6",
+          "image": "photoreal/oxford-sky.png"
+        }
+      ],
+      "stock": {
+        "default": 8,
+        "overrides": {
+          "sky:S": 0
+        }
+      }
+    },
+    {
+      "slug": "crew-knit",
+      "name": "بافت یقه‌گرد",
+      "category": "knitwear",
+      "collections": [
+        "autumn-1405",
+        "old-money"
+      ],
+      "short_description": "بافت یقه‌گرد با بافت ریز و سرآستین کشی.",
+      "description": "بافت یقه‌گرد سبک با سرآستین و لبهٔ کشباف؛ روی پیراهن یا تنها پوشیده می‌شود.",
+      "materials": "پشم مرینو و اکریلیک (اطلاعات نمونه)",
+      "care": "شست‌وشو با دست و آب سرد\nروی سطح صاف خشک کنید",
+      "fit_notes": "فرم استاندارد.",
+      "size_chart": "tops",
+      "is_new": false,
+      "studio_slot": "top",
+      "studio_asset": "crew-knit",
+      "sort_order": 10,
+      "price_toman": 2750000,
+      "sku": "KNT",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        {
+          "code": "oatmeal",
+          "name": "جو دوسری",
+          "hex": "#CDBFA6",
+          "image": "photoreal/crew-oatmeal.png"
+        },
+        {
+          "code": "navy",
+          "name": "سرمه‌ای",
+          "hex": "#28324A",
+          "image": "photoreal/crew-navy.png"
+        }
+      ],
+      "stock": {
+        "default": 6,
+        "overrides": {}
+      }
+    },
+    {
+      "slug": "chino-trousers",
+      "name": "شلوار کتان",
+      "category": "trousers",
+      "collections": [
+        "everyday-essentials",
+        "old-money"
+      ],
+      "short_description": "شلوار کتان راسته با جیب‌های مورب.",
+      "description": "شلوار کتان با فرم راسته و پارچهٔ کمی کشی؛ انتخابی راحت برای روزهای کاری و آخر هفته.",
+      "materials": "پنبه با درصد کمی الاستان (اطلاعات نمونه)",
+      "care": "شست‌وشو با آب سرد\nاتو با حرارت متوسط",
+      "fit_notes": "فرم راسته؛ کمر استاندارد.",
+      "size_chart": "bottoms",
+      "is_new": false,
+      "studio_slot": "bottom",
+      "studio_asset": "chino-trousers",
+      "sort_order": 11,
+      "price_toman": 2400000,
+      "sku": "CHN",
+      "sizes": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "36"
+      ],
+      "colors": [
+        {
+          "code": "sand",
+          "name": "شنی",
+          "hex": "#C2B08F",
+          "image": "photoreal/chino-sand.png"
+        },
+        {
+          "code": "olive",
+          "name": "زیتونی",
+          "hex": "#5D5E43",
+          "image": "photoreal/chino-olive.png"
+        }
+      ],
+      "stock": {
+        "default": 7,
+        "overrides": {
+          "olive:30": 0
+        }
+      }
+    },
+    {
+      "slug": "straight-jeans",
+      "name": "شلوار جین راسته",
+      "category": "trousers",
+      "collections": [
+        "autumn-1405"
+      ],
+      "short_description": "جین راسته با شستشوی تیره.",
+      "description": "شلوار جین با فرم راسته، پنج جیب و پارچهٔ دنیم میانه‌وزن.",
+      "materials": "دنیم پنبه‌ای (اطلاعات نمونه)",
+      "care": "شست‌وشوی کم‌تکرار، پشت‌ورو و با آب سرد",
+      "fit_notes": "فرم راسته؛ پس از چند بار پوشیدن کمی جا باز می‌کند.",
+      "size_chart": "bottoms",
+      "is_new": false,
+      "studio_slot": "bottom",
+      "studio_asset": "straight-jeans",
+      "sort_order": 12,
+      "price_toman": 2900000,
+      "sku": "JNS",
+      "sizes": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "36"
+      ],
+      "colors": [
+        {
+          "code": "indigo",
+          "name": "سرمه‌ای تیره",
+          "hex": "#26324D",
+          "image": "photoreal/jeans-indigo.png"
+        },
+        {
+          "code": "black",
+          "name": "مشکی",
+          "hex": "#1F2022",
+          "image": "photoreal/jeans-black.png"
+        }
+      ],
+      "stock": {
+        "default": 6,
+        "overrides": {}
+      }
+    },
+    {
+      "slug": "leather-sneakers",
+      "name": "کتانی چرمی",
+      "category": "shoes",
+      "collections": [
+        "everyday-essentials"
+      ],
+      "short_description": "کتانی چرمی ساده با زیرهٔ دوخته.",
+      "description": "کتانی چرمی بدون نقش با زیرهٔ دوخته و آستر نرم؛ ساده و همه‌کاره.",
+      "materials": "رویه: چرم\nزیره: لاستیک (اطلاعات نمونه)",
+      "care": "با دستمال مرطوب تمیز کنید\nبند را جدا بشویید",
+      "fit_notes": "قالب استاندارد.",
+      "size_chart": "shoes",
+      "is_new": true,
+      "studio_slot": "shoes",
+      "studio_asset": "leather-sneakers",
+      "sort_order": 13,
+      "price_toman": 3500000,
+      "sku": "SNK",
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45"
+      ],
+      "colors": [
+        {
+          "code": "white",
+          "name": "سفید",
+          "hex": "#F2F0EA",
+          "image": "photoreal/sneakers-white.png"
+        },
+        {
+          "code": "black",
+          "name": "مشکی",
+          "hex": "#1B1B1B",
+          "image": "photoreal/sneakers-black.png"
+        }
+      ],
+      "stock": {
+        "default": 5,
+        "overrides": {
+          "white:43": 1
+        }
+      }
+    },
+    {
+      "slug": "knit-polo",
+      "name": "پولوی بافت شیری",
+      "category": "t-shirts",
+      "collections": [
+        "old-money"
+      ],
+      "short_description": "پولوی بافت شیری؛ یک انتخاب کلاسیک برای استایل شخصی.",
+      "description": "پولوی بافت شیری با الهام از استایل اولد مانی. تصاویر و مشخصات این کالکشن برای پروژهٔ تمرینی ساخته شده‌اند.",
+      "materials": "مشخصات نمونهٔ کالکشن تمرینی",
+      "care": "نگهداری مطابق جنس محصول؛ اطلاعات نمونه",
+      "fit_notes": "برای انتخاب سایز از راهنمای اندازه‌ها استفاده کنید.",
+      "size_chart": "tops",
+      "is_new": true,
+      "studio_slot": "top",
+      "studio_asset": "knit-polo",
+      "sort_order": 33,
+      "price_toman": 2300000,
+      "sku": "KNIT-POLO",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        {
+          "code": "ivory",
+          "name": "شیری",
+          "hex": "#EDE6D8",
+          "image": "photoreal/knit-polo.png"
+        }
+      ],
+      "stock": {
+        "default": 12,
+        "overrides": {}
+      }
+    },
+    {
+      "slug": "navy-blazer",
+      "name": "کت کلاسیک سرمه‌ای",
+      "category": "tailoring",
+      "collections": [
+        "old-money"
+      ],
+      "short_description": "کت کلاسیک سرمه‌ای؛ یک انتخاب کلاسیک برای استایل شخصی.",
+      "description": "کت کلاسیک سرمه‌ای با الهام از استایل اولد مانی. تصاویر و مشخصات این کالکشن برای پروژهٔ تمرینی ساخته شده‌اند.",
+      "materials": "مشخصات نمونهٔ کالکشن تمرینی",
+      "care": "نگهداری مطابق جنس محصول؛ اطلاعات نمونه",
+      "fit_notes": "برای انتخاب سایز از راهنمای اندازه‌ها استفاده کنید.",
+      "size_chart": "tops",
+      "is_new": true,
+      "studio_slot": "outerwear",
+      "studio_asset": "navy-blazer",
+      "sort_order": 34,
+      "price_toman": 6400000,
+      "sku": "NAVY-BLAZER",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        {
+          "code": "navy",
+          "name": "سرمه‌ای",
+          "hex": "#293345",
+          "image": "photoreal/blazer-navy.png"
+        }
+      ],
+      "stock": {
+        "default": 12,
+        "overrides": {}
+      }
+    },
+    {
+      "slug": "linen-shirt",
+      "name": "پیراهن لینن شیری",
+      "category": "shirts",
+      "collections": [
+        "old-money"
+      ],
+      "short_description": "پیراهن لینن شیری؛ یک انتخاب کلاسیک برای استایل شخصی.",
+      "description": "پیراهن لینن شیری با الهام از استایل اولد مانی. تصاویر و مشخصات این کالکشن برای پروژهٔ تمرینی ساخته شده‌اند.",
+      "materials": "مشخصات نمونهٔ کالکشن تمرینی",
+      "care": "نگهداری مطابق جنس محصول؛ اطلاعات نمونه",
+      "fit_notes": "برای انتخاب سایز از راهنمای اندازه‌ها استفاده کنید.",
+      "size_chart": "tops",
+      "is_new": true,
+      "studio_slot": "top",
+      "studio_asset": "linen-shirt",
+      "sort_order": 35,
+      "price_toman": 2800000,
+      "sku": "LINEN-SHIRT",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        {
+          "code": "ecru",
+          "name": "شیری",
+          "hex": "#E7DFCE",
+          "image": "photoreal/linen-ecru.png"
+        }
+      ],
+      "stock": {
+        "default": 12,
+        "overrides": {}
+      }
+    },
+    {
+      "slug": "suede-loafers",
+      "name": "لوفر جیر شکلاتی",
+      "category": "shoes",
+      "collections": [
+        "old-money"
+      ],
+      "short_description": "لوفر جیر شکلاتی؛ یک انتخاب کلاسیک برای استایل شخصی.",
+      "description": "لوفر جیر شکلاتی با الهام از استایل اولد مانی. تصاویر و مشخصات این کالکشن برای پروژهٔ تمرینی ساخته شده‌اند.",
+      "materials": "مشخصات نمونهٔ کالکشن تمرینی",
+      "care": "نگهداری مطابق جنس محصول؛ اطلاعات نمونه",
+      "fit_notes": "برای انتخاب سایز از راهنمای اندازه‌ها استفاده کنید.",
+      "size_chart": "shoes",
+      "is_new": true,
+      "studio_slot": "shoes",
+      "studio_asset": "suede-loafers",
+      "sort_order": 36,
+      "price_toman": 4300000,
+      "sku": "SUEDE-LOAFERS",
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "colors": [
+        {
+          "code": "brown",
+          "name": "شکلاتی",
+          "hex": "#614534",
+          "image": "photoreal/loafers-brown.png"
+        }
+      ],
+      "stock": {
+        "default": 12,
+        "overrides": {}
+      }
+    },
+    {
+      "slug": "derby-shoes",
+      "name": "کفش دربی چرمی",
+      "category": "shoes",
+      "collections": [
+        "old-money"
+      ],
+      "short_description": "کفش دربی چرمی؛ یک انتخاب کلاسیک برای استایل شخصی.",
+      "description": "کفش دربی چرمی با الهام از استایل اولد مانی. تصاویر و مشخصات این کالکشن برای پروژهٔ تمرینی ساخته شده‌اند.",
+      "materials": "مشخصات نمونهٔ کالکشن تمرینی",
+      "care": "نگهداری مطابق جنس محصول؛ اطلاعات نمونه",
+      "fit_notes": "برای انتخاب سایز از راهنمای اندازه‌ها استفاده کنید.",
+      "size_chart": "shoes",
+      "is_new": true,
+      "studio_slot": "shoes",
+      "studio_asset": "derby-shoes",
+      "sort_order": 37,
+      "price_toman": 4200000,
+      "sku": "DERBY-SHOES",
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "colors": [
+        {
+          "code": "black",
+          "name": "مشکی",
+          "hex": "#20211F",
+          "image": "photoreal/derby-black.png"
+        }
+      ],
+      "stock": {
+        "default": 12,
+        "overrides": {}
+      }
+    },
+    {
+      "slug": "tortoise-sunglasses",
+      "name": "عینک لاک‌پشتی کلاسیک",
+      "category": "sunglasses",
+      "collections": [
+        "old-money"
+      ],
+      "short_description": "عینک لاک‌پشتی کلاسیک؛ یک انتخاب کلاسیک برای استایل شخصی.",
+      "description": "عینک لاک‌پشتی کلاسیک با الهام از استایل اولد مانی. تصاویر و مشخصات این کالکشن برای پروژهٔ تمرینی ساخته شده‌اند.",
+      "materials": "مشخصات نمونهٔ کالکشن تمرینی",
+      "care": "نگهداری مطابق جنس محصول؛ اطلاعات نمونه",
+      "fit_notes": "برای انتخاب سایز از راهنمای اندازه‌ها استفاده کنید.",
+      "size_chart": "none",
+      "is_new": true,
+      "studio_slot": "accessory",
+      "studio_asset": "tortoise-sunglasses",
+      "sort_order": 38,
+      "price_toman": 1800000,
+      "sku": "TORTOISE-SUNGL",
+      "sizes": [
+        "ONE"
+      ],
+      "colors": [
+        {
+          "code": "tortoise",
+          "name": "لاک‌پشتی",
+          "hex": "#78512F",
+          "image": "photoreal/sunglasses-tortoise.png"
+        }
+      ],
+      "stock": {
+        "default": 12,
+        "overrides": {}
+      },
+      "studio_supported": true
+    },
+    {
+      "slug": "black-sunglasses",
+      "name": "عینک مشکی کلاسیک",
+      "category": "sunglasses",
+      "collections": [
+        "old-money"
+      ],
+      "short_description": "عینک مشکی کلاسیک؛ یک انتخاب کلاسیک برای استایل شخصی.",
+      "description": "عینک مشکی کلاسیک با الهام از استایل اولد مانی. تصاویر و مشخصات این کالکشن برای پروژهٔ تمرینی ساخته شده‌اند.",
+      "materials": "مشخصات نمونهٔ کالکشن تمرینی",
+      "care": "نگهداری مطابق جنس محصول؛ اطلاعات نمونه",
+      "fit_notes": "برای انتخاب سایز از راهنمای اندازه‌ها استفاده کنید.",
+      "size_chart": "none",
+      "is_new": true,
+      "studio_slot": "accessory",
+      "studio_asset": "black-sunglasses",
+      "sort_order": 39,
+      "price_toman": 1600000,
+      "sku": "BLACK-SUNGLASS",
+      "sizes": [
+        "ONE"
+      ],
+      "colors": [
+        {
+          "code": "black",
+          "name": "مشکی",
+          "hex": "#20211F",
+          "image": "photoreal/sunglasses-black.png"
+        }
+      ],
+      "stock": {
+        "default": 12,
+        "overrides": {}
+      },
+      "studio_supported": true
+    },
+    {
+      "slug": "aviator-sunglasses",
+      "name": "عینک خلبانی طلایی",
+      "category": "sunglasses",
+      "collections": [
+        "old-money"
+      ],
+      "short_description": "عینک خلبانی طلایی؛ یک انتخاب کلاسیک برای استایل شخصی.",
+      "description": "عینک خلبانی طلایی با الهام از استایل اولد مانی. تصاویر و مشخصات این کالکشن برای پروژهٔ تمرینی ساخته شده‌اند.",
+      "materials": "مشخصات نمونهٔ کالکشن تمرینی",
+      "care": "نگهداری مطابق جنس محصول؛ اطلاعات نمونه",
+      "fit_notes": "برای انتخاب سایز از راهنمای اندازه‌ها استفاده کنید.",
+      "size_chart": "none",
+      "is_new": true,
+      "studio_slot": "accessory",
+      "studio_asset": "aviator-sunglasses",
+      "sort_order": 40,
+      "price_toman": 2100000,
+      "sku": "AVIATOR-SUNGLA",
+      "sizes": [
+        "ONE"
+      ],
+      "colors": [
+        {
+          "code": "gold",
+          "name": "طلایی",
+          "hex": "#B99C64",
+          "image": "photoreal/sunglasses-aviator.png"
+        }
+      ],
+      "stock": {
+        "default": 12,
+        "overrides": {}
+      },
+      "studio_supported": true
+    }
+  ]
+}

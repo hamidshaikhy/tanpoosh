@@ -1,0 +1,6 @@
+{% extends "emails/_base.html" %}
+{% block content %}
+<p>{{ name }} عزیز، سلام</p>
+<p>وضعیت درخواست مرجوعی سفارش <strong dir="ltr">{{ number }}</strong>: <strong>{{ status }}</strong></p>
+{% if note %}<p>توضیح: {{ note }}</p>{% endif %}
+{% endblock %}

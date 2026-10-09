@@ -1,0 +1,6 @@
+{% extends "emails/_base.html" %}
+{% block content %}
+<p>{{ name }} عزیز، سلام</p>
+<p>مبلغ <strong>{{ amount }}</strong> بابت سفارش <strong dir="ltr">{{ number }}</strong> بازپرداخت شد.</p>
+<p>شمارهٔ مرجع تراکنش: <span dir="ltr">{{ reference }}</span></p>
+{% endblock %}

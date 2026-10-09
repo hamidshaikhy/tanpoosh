@@ -1,0 +1,1 @@
+{% autoescape off %}سفارش {{ number }} ارسال شد{% endautoescape %}

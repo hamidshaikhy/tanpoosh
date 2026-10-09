@@ -1,0 +1,16 @@
+.git
+.local-tools
+logs
+**/.env
+**/.env.local
+**/.venv
+**/__pycache__
+backend/.local-credentials
+backend/media
+backend/backups
+backend/.test-media
+backend/celerybeat-schedule*
+frontend/node_modules
+frontend/.next*
+frontend/test-results
+frontend/playwright-report

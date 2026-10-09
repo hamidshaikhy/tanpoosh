@@ -1,0 +1,5 @@
+{% autoescape off %}{{ name }} عزیز، سلام
+
+وضعیت درخواست مرجوعی سفارش {{ number }}: {{ status }}
+{% if note %}توضیح: {{ note }}
+{% endif %}{% endautoescape %}

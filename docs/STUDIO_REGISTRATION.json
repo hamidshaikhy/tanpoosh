@@ -1,0 +1,754 @@
+{
+  "frame": [
+    1024,
+    1536
+  ],
+  "coordinates": "source and target pixels; measured alpha landmarks",
+  "records": [
+    {
+      "id": "basic-tee",
+      "color": "ivory",
+      "slot": "top",
+      "source_alpha_bounds": [
+        263,
+        229,
+        763,
+        910
+      ],
+      "anchors": {
+        "source_neck": 238,
+        "target_neck": 244,
+        "source_palm_row": 829,
+        "source_palms": [
+          299.5,
+          721
+        ],
+        "target_palms_x": [
+          326,
+          695
+        ],
+        "target_fingertip_y": 860
+      },
+      "placement": {
+        "scale": 0.87544484,
+        "scale_y": 0.916666667,
+        "x": 0.062308858,
+        "y": 0.016818576
+      }
+    },
+    {
+      "id": "basic-tee",
+      "color": "grey",
+      "slot": "top",
+      "source_alpha_bounds": [
+        95,
+        194,
+        944,
+        1339
+      ],
+      "anchors": {
+        "source_neck": 213,
+        "target_neck": 244,
+        "source_palm_row": 1204,
+        "source_palms": [
+          158.5,
+          872.5
+        ],
+        "target_palms_x": [
+          326,
+          695
+        ],
+        "target_fingertip_y": 860
+      },
+      "placement": {
+        "scale": 0.516806723,
+        "scale_y": 0.547069272,
+        "x": 0.238365366,
+        "y": 0.082991045
+      }
+    },
+    {
+      "id": "basic-tee",
+      "color": "charcoal",
+      "slot": "top",
+      "source_alpha_bounds": [
+        76,
+        131,
+        948,
+        1287
+      ],
+      "anchors": {
+        "source_neck": 152,
+        "target_neck": 244,
+        "source_palm_row": 1151,
+        "source_palms": [
+          141.5,
+          876.5
+        ],
+        "target_palms_x": [
+          326,
+          695
+        ],
+        "target_fingertip_y": 860
+      },
+      "placement": {
+        "scale": 0.502040816,
+        "scale_y": 0.542731278,
+        "x": 0.248985571,
+        "y": 0.105146384
+      }
+    },
+    {
+      "id": "basic-tee",
+      "color": "black",
+      "slot": "top",
+      "source_alpha_bounds": [
+        155,
+        273,
+        877,
+        1247
+      ],
+      "anchors": {
+        "source_neck": 288,
+        "target_neck": 244,
+        "source_palm_row": 1132,
+        "source_palms": [
+          209,
+          815.5
+        ],
+        "target_palms_x": [
+          326,
+          695
+        ],
+        "target_fingertip_y": 860
+      },
+      "placement": {
+        "scale": 0.608408904,
+        "scale_y": 0.642335766,
+        "x": 0.194182167,
+        "y": 0.03841621
+      }
+    },
+    {
+      "id": "tailored-trousers",
+      "color": "black",
+      "slot": "bottom",
+      "source_alpha_bounds": [
+        368,
+        596,
+        661,
+        1319
+      ],
+      "anchors": {
+        "target_waist_y": 596,
+        "target_hem_y": 1319,
+        "target_width": 294
+      },
+      "placement": {
+        "scale": 1.003412969,
+        "scale_y": 1,
+        "x": -0.004156223,
+        "y": 0
+      }
+    },
+    {
+      "id": "tailored-trousers",
+      "color": "charcoal",
+      "slot": "bottom",
+      "source_alpha_bounds": [
+        354,
+        584,
+        676,
+        1347
+      ],
+      "anchors": {
+        "target_waist_y": 596,
+        "target_hem_y": 1319,
+        "target_width": 294
+      },
+      "placement": {
+        "scale": 0.913043478,
+        "scale_y": 0.94757536,
+        "x": 0.040803329,
+        "y": 0.027744785
+      }
+    },
+    {
+      "id": "tailored-trousers",
+      "color": "light-grey",
+      "slot": "bottom",
+      "source_alpha_bounds": [
+        368,
+        594,
+        662,
+        1319
+      ],
+      "anchors": {
+        "target_waist_y": 596,
+        "target_hem_y": 1319,
+        "target_width": 294
+      },
+      "placement": {
+        "scale": 1,
+        "scale_y": 0.997241379,
+        "x": -0.002929688,
+        "y": 0.002368894
+      }
+    },
+    {
+      "id": "chelsea-boots",
+      "color": "black",
+      "slot": "shoes",
+      "source_alpha_bounds": [
+        216,
+        1151,
+        817,
+        1446
+      ],
+      "anchors": {
+        "target_floor_y": 1410,
+        "target_width": 340
+      },
+      "placement": {
+        "scale": 0.565723794,
+        "scale_y": 0.565723794,
+        "x": 0.214652012,
+        "y": 0.385392835
+      }
+    },
+    {
+      "id": "chelsea-boots",
+      "color": "brown",
+      "slot": "shoes",
+      "source_alpha_bounds": [
+        208,
+        1146,
+        829,
+        1438
+      ],
+      "anchors": {
+        "target_floor_y": 1410,
+        "target_width": 340
+      },
+      "placement": {
+        "scale": 0.547504026,
+        "scale_y": 0.547504026,
+        "x": 0.22277262,
+        "y": 0.405396622
+      }
+    },
+    {
+      "id": "hoodie",
+      "color": "grey",
+      "slot": "top",
+      "source_alpha_bounds": [
+        85,
+        203,
+        945,
+        1363
+      ],
+      "anchors": {
+        "source_neck": 221,
+        "target_neck": 244,
+        "source_palm_row": 1226,
+        "source_palms": [
+          168.5,
+          856.5
+        ],
+        "target_palms_x": [
+          326,
+          695
+        ],
+        "target_fingertip_y": 860
+      },
+      "placement": {
+        "scale": 0.536337209,
+        "scale_y": 0.539404553,
+        "x": 0.230104668,
+        "y": 0.081244527
+      }
+    },
+    {
+      "id": "hoodie",
+      "color": "ivory",
+      "slot": "top",
+      "source_alpha_bounds": [
+        93,
+        130,
+        935,
+        1304
+      ],
+      "anchors": {
+        "source_neck": 147,
+        "target_neck": 244,
+        "source_palm_row": 1165,
+        "source_palms": [
+          174,
+          848.5
+        ],
+        "target_palms_x": [
+          326,
+          695
+        ],
+        "target_fingertip_y": 860
+      },
+      "placement": {
+        "scale": 0.547071905,
+        "scale_y": 0.532411409,
+        "x": 0.225399891,
+        "y": 0.107900731
+      }
+    },
+    {
+      "id": "hoodie",
+      "color": "black",
+      "slot": "top",
+      "source_alpha_bounds": [
+        87,
+        211,
+        937,
+        1348
+      ],
+      "anchors": {
+        "source_neck": 221,
+        "target_neck": 244,
+        "source_palm_row": 1213,
+        "source_palms": [
+          160.5,
+          855.5
+        ],
+        "target_palms_x": [
+          326,
+          695
+        ],
+        "target_fingertip_y": 860
+      },
+      "placement": {
+        "scale": 0.530935252,
+        "scale_y": 0.546583851,
+        "x": 0.235141496,
+        "y": 0.080211568
+      }
+    },
+    {
+      "id": "polo-shirt",
+      "color": "navy",
+      "slot": "top",
+      "source_alpha_bounds": [
+        65,
+        193,
+        970,
+        1413
+      ],
+      "anchors": {
+        "source_neck": 205,
+        "target_neck": 244,
+        "source_palm_row": 1268,
+        "source_palms": [
+          136,
+          889
+        ],
+        "target_palms_x": [
+          326,
+          695
+        ],
+        "target_fingertip_y": 860
+      },
+      "placement": {
+        "scale": 0.490039841,
+        "scale_y": 0.509933775,
+        "x": 0.253275959,
+        "y": 0.090796599
+      }
+    },
+    {
+      "id": "polo-shirt",
+      "color": "ecru",
+      "slot": "top",
+      "source_alpha_bounds": [
+        85,
+        219,
+        956,
+        1376
+      ],
+      "anchors": {
+        "source_neck": 233,
+        "target_neck": 244,
+        "source_palm_row": 1239,
+        "source_palms": [
+          149,
+          884
+        ],
+        "target_palms_x": [
+          326,
+          695
+        ],
+        "target_fingertip_y": 860
+      },
+      "placement": {
+        "scale": 0.502040816,
+        "scale_y": 0.538932633,
+        "x": 0.245308514,
+        "y": 0.077102016
+      }
+    },
+    {
+      "id": "oxford-shirt",
+      "color": "white",
+      "slot": "top",
+      "source_alpha_bounds": [
+        286,
+        235,
+        740,
+        860
+      ],
+      "anchors": {
+        "source_neck": 241,
+        "target_neck": 244,
+        "source_palm_row": 786,
+        "source_palms": [
+          323,
+          698
+        ],
+        "target_palms_x": [
+          326,
+          695
+        ],
+        "target_fingertip_y": 860
+      },
+      "placement": {
+        "scale": 0.984,
+        "scale_y": 0.995153473,
+        "x": 0.007976563,
+        "y": 0.00271355
+      }
+    },
+    {
+      "id": "oxford-shirt",
+      "color": "sky",
+      "slot": "top",
+      "source_alpha_bounds": [
+        119,
+        271,
+        916,
+        1357
+      ],
+      "anchors": {
+        "source_neck": 283,
+        "target_neck": 244,
+        "source_palm_row": 1228,
+        "source_palms": [
+          186.5,
+          841
+        ],
+        "target_palms_x": [
+          326,
+          695
+        ],
+        "target_fingertip_y": 860
+      },
+      "placement": {
+        "scale": 0.563789152,
+        "scale_y": 0.573556797,
+        "x": 0.215677073,
+        "y": 0.053179314
+      }
+    },
+    {
+      "id": "crew-knit",
+      "color": "oatmeal",
+      "slot": "top",
+      "source_alpha_bounds": [
+        118,
+        219,
+        905,
+        1304
+      ],
+      "anchors": {
+        "source_neck": 228,
+        "target_neck": 244,
+        "source_palm_row": 1175,
+        "source_palms": [
+          190.5,
+          829.5
+        ],
+        "target_palms_x": [
+          326,
+          695
+        ],
+        "target_fingertip_y": 860
+      },
+      "placement": {
+        "scale": 0.577464789,
+        "scale_y": 0.572490706,
+        "x": 0.210930623,
+        "y": 0.073875077
+      }
+    },
+    {
+      "id": "crew-knit",
+      "color": "navy",
+      "slot": "top",
+      "source_alpha_bounds": [
+        108,
+        290,
+        913,
+        1364
+      ],
+      "anchors": {
+        "source_neck": 295,
+        "target_neck": 244,
+        "source_palm_row": 1236,
+        "source_palms": [
+          174.5,
+          842
+        ],
+        "target_palms_x": [
+          326,
+          695
+        ],
+        "target_fingertip_y": 860
+      },
+      "placement": {
+        "scale": 0.552808989,
+        "scale_y": 0.576239476,
+        "x": 0.224155109,
+        "y": 0.048183174
+      }
+    },
+    {
+      "id": "chino-trousers",
+      "color": "sand",
+      "slot": "bottom",
+      "source_alpha_bounds": [
+        370,
+        595,
+        662,
+        1316
+      ],
+      "anchors": {
+        "target_waist_y": 596,
+        "target_hem_y": 1319,
+        "target_width": 294
+      },
+      "placement": {
+        "scale": 1.006849315,
+        "scale_y": 1.002773925,
+        "x": -0.007357663,
+        "y": -0.000423493
+      }
+    },
+    {
+      "id": "chino-trousers",
+      "color": "olive",
+      "slot": "bottom",
+      "source_alpha_bounds": [
+        370,
+        594,
+        657,
+        1306
+      ],
+      "anchors": {
+        "target_waist_y": 596,
+        "target_hem_y": 1319,
+        "target_width": 294
+      },
+      "placement": {
+        "scale": 1.024390244,
+        "scale_y": 1.015449438,
+        "x": -0.013695694,
+        "y": -0.004672504
+      }
+    },
+    {
+      "id": "straight-jeans",
+      "color": "indigo",
+      "slot": "bottom",
+      "source_alpha_bounds": [
+        355,
+        588,
+        673,
+        1331
+      ],
+      "anchors": {
+        "target_waist_y": 596,
+        "target_hem_y": 1319,
+        "target_width": 294
+      },
+      "placement": {
+        "scale": 0.924528302,
+        "scale_y": 0.9730821,
+        "x": 0.03593013,
+        "y": 0.015512842
+      }
+    },
+    {
+      "id": "straight-jeans",
+      "color": "black",
+      "slot": "bottom",
+      "source_alpha_bounds": [
+        365,
+        595,
+        661,
+        1323
+      ],
+      "anchors": {
+        "target_waist_y": 596,
+        "target_hem_y": 1319,
+        "target_width": 294
+      },
+      "placement": {
+        "scale": 0.993243243,
+        "scale_y": 0.993131868,
+        "x": 0.002408414,
+        "y": 0.003311548
+      }
+    },
+    {
+      "id": "leather-sneakers",
+      "color": "white",
+      "slot": "shoes",
+      "source_alpha_bounds": [
+        190,
+        1205,
+        829,
+        1434
+      ],
+      "anchors": {
+        "target_floor_y": 1410,
+        "target_width": 340
+      },
+      "placement": {
+        "scale": 0.532081377,
+        "scale_y": 0.532081377,
+        "x": 0.235258338,
+        "y": 0.421220902
+      }
+    },
+    {
+      "id": "leather-sneakers",
+      "color": "black",
+      "slot": "shoes",
+      "source_alpha_bounds": [
+        148,
+        1165,
+        917,
+        1469
+      ],
+      "anchors": {
+        "target_floor_y": 1410,
+        "target_width": 340
+      },
+      "placement": {
+        "scale": 0.44213264,
+        "scale_y": 0.44213264,
+        "x": 0.270082392,
+        "y": 0.495121844
+      }
+    },
+    {
+      "id": "knit-polo",
+      "color": "ivory",
+      "slot": "top",
+      "source_alpha_bounds": [
+        83,
+        212,
+        940,
+        1389
+      ],
+      "anchors": {
+        "source_neck": 222,
+        "target_neck": 244,
+        "source_palm_row": 1249,
+        "source_palms": [
+          149,
+          868.5
+        ],
+        "target_palms_x": [
+          326,
+          695
+        ],
+        "target_fingertip_y": 860
+      },
+      "placement": {
+        "scale": 0.51285615,
+        "scale_y": 0.527849186,
+        "x": 0.243734798,
+        "y": 0.082563464
+      }
+    },
+    {
+      "id": "linen-shirt",
+      "color": "ecru",
+      "slot": "top",
+      "source_alpha_bounds": [
+        66,
+        185,
+        961,
+        1427
+      ],
+      "anchors": {
+        "source_neck": 195,
+        "target_neck": 244,
+        "source_palm_row": 1279,
+        "source_palms": [
+          150.5,
+          871.5
+        ],
+        "target_palms_x": [
+          326,
+          695
+        ],
+        "target_fingertip_y": 860
+      },
+      "placement": {
+        "scale": 0.511789182,
+        "scale_y": 0.5,
+        "x": 0.24314036,
+        "y": 0.095377604
+      }
+    },
+    {
+      "id": "suede-loafers",
+      "color": "brown",
+      "slot": "shoes",
+      "source_alpha_bounds": [
+        209,
+        1265,
+        830,
+        1450
+      ],
+      "anchors": {
+        "target_floor_y": 1410,
+        "target_width": 340
+      },
+      "placement": {
+        "scale": 0.547504026,
+        "scale_y": 0.547504026,
+        "x": 0.222237948,
+        "y": 0.401119247
+      }
+    },
+    {
+      "id": "derby-shoes",
+      "color": "black",
+      "slot": "shoes",
+      "source_alpha_bounds": [
+        223,
+        1295,
+        807,
+        1473
+      ],
+      "anchors": {
+        "target_floor_y": 1410,
+        "target_width": 340
+      },
+      "placement": {
+        "scale": 0.582191781,
+        "scale_y": 0.582191781,
+        "x": 0.20719847,
+        "y": 0.359655929
+      }
+    }
+  ]
+}

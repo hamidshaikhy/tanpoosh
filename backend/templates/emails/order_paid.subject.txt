@@ -1,0 +1,1 @@
+{% autoescape off %}{% if is_test %}[آزمایشی] {% endif %}پرداخت سفارش {{ number }} تأیید شد{% endautoescape %}

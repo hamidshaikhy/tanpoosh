@@ -1,0 +1,6 @@
+{% extends "emails/_base.html" %}
+{% block content %}
+<p>{{ name }} عزیز، سلام</p>
+<p>سفارش <strong dir="ltr">{{ number }}</strong> با {{ carrier }} ارسال شد.</p>
+{% if tracking %}<p>کد رهگیری مرسوله: <strong dir="ltr">{{ tracking }}</strong></p>{% endif %}
+{% endblock %}

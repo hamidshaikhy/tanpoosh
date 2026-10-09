@@ -1,0 +1,6 @@
+{% extends "emails/_base.html" %}
+{% block content %}
+<p>{{ name }} عزیز، سلام</p>
+<p>درخواست تغییر ایمیل حساب تن‌پوش به این نشانی ثبت شده است. تا وقتی تأیید نکنید، ایمیل قبلی شما تغییر نمی‌کند.</p>
+{% include "emails/_button.html" with label="تأیید ایمیل جدید" %}
+{% endblock %}

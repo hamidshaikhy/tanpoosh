@@ -1,0 +1,3 @@
+{% autoescape off %}{{ name }} عزیز، سلام
+
+مبلغ {{ amount }} بابت سفارش {{ number }} بازپرداخت شد. شمارهٔ مرجع: {{ reference }}{% endautoescape %}

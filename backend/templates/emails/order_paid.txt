@@ -1,0 +1,8 @@
+{% autoescape off %}{{ name }} عزیز، سلام
+
+{% if is_test %}[آزمایشی — پرداخت در محیط تست درگاه انجام شده و پول واقعی جابه‌جا نشده است]
+{% endif %}پرداخت سفارش {{ number }} به مبلغ {{ total }} تأیید شد. کد پیگیری: {{ ref_id }}
+{% if review %}پرداخت شما ثبت شده اما تأمین موجودی این سفارش نیاز به بررسی دارد؛ همکاران ما به‌زودی با شما تماس می‌گیرند.
+{% endif %}{% for item in items %}- {{ item.name }} | {{ item.color }} | سایز {{ item.size }} | {{ item.qty }} عدد
+{% endfor %}
+پیگیری سفارش: {{ base_url }}/account/orders{% endautoescape %}

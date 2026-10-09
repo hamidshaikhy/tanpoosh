@@ -1,0 +1,4 @@
+{% autoescape off %}{{ name }} عزیز، سلام
+
+برای مشاهدهٔ سفارش {{ number }} پیوند زیر را باز کنید (اعتبار: {{ hours }} ساعت):
+{{ link }}{% endautoescape %}
