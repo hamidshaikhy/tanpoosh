@@ -39,10 +39,10 @@ export function Header({ announcement }: { announcement: string }) {
           <p className="mx-auto max-w-7xl px-4 py-2 text-center text-[13px] leading-6">{announcement}</p>
         </div>
       ) : null}
-      <div className="mx-auto flex h-16 max-w-7xl items-center gap-6 px-4 sm:h-[72px] sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-16 max-w-7xl items-center gap-2 px-4 sm:h-[72px] sm:gap-6 sm:px-6 lg:px-8">
         <button
           type="button"
-          className="-ms-2 p-2 lg:hidden"
+          className="-ms-2 flex size-11 items-center justify-center lg:hidden"
           onClick={() => setNav(true)}
           aria-label={nav.menu}
           aria-haspopup="dialog"
@@ -50,7 +50,7 @@ export function Header({ announcement }: { announcement: string }) {
           <Icon name="menu" />
         </button>
         <Link href="/" aria-label={brand.homeLabel} className="shrink-0">
-          <BrandLogo variant="dark-wordmark" className="h-[18px] w-auto sm:h-[22px]" />
+          <BrandLogo variant="dark-wordmark" className="h-4 w-auto sm:h-[22px]" />
         </Link>
         <nav aria-label={nav.mainNav} className="hidden flex-1 lg:block">
           <ul className="flex items-center gap-8 ps-8 text-[15px]">
@@ -70,15 +70,15 @@ export function Header({ announcement }: { announcement: string }) {
             })}
           </ul>
         </nav>
-        <div className="ms-auto flex items-center gap-1 sm:gap-3">
-          <button type="button" onClick={() => setSearch(true)} className="p-2 hover:opacity-70" aria-label={nav.search} aria-haspopup="dialog">
+        <div className="ms-auto flex items-center sm:gap-3">
+          <button type="button" onClick={() => setSearch(true)} className="flex size-11 items-center justify-center hover:opacity-70" aria-label={nav.search} aria-haspopup="dialog">
             <Icon name="search" />
           </button>
-          <AccountMenu />
+          <div className="hidden min-[380px]:flex min-[380px]:size-11 min-[380px]:items-center min-[380px]:justify-center"><AccountMenu /></div>
           <button
             type="button"
             onClick={openCart}
-            className="flex items-center gap-2 p-2 text-[15px] hover:opacity-70"
+            className="flex min-h-11 min-w-11 items-center justify-center gap-2 p-2 text-[15px] hover:opacity-70"
             aria-label={`${nav.bag}، ${faDigits(count)} کالا`}
             aria-haspopup="dialog"
             data-testid="header-cart"

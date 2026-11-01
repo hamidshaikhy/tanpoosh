@@ -1,7 +1,8 @@
-import NextImage from "next/image";
 import Link from "next/link";
 import { connection } from "next/server";
 
+import { StyleHero } from "@/components/home/StyleHero";
+import { CategoryDisplay } from "@/components/home/CategoryDisplay";
 import { RackTeaser } from "@/components/home/RackTeaser";
 import { ProductRail } from "@/components/home/ProductRail";
 import { LookDiscovery } from "@/components/home/LookDiscovery";
@@ -31,64 +32,9 @@ export default async function HomePage() {
 
   return (
     <>
-      {/* HERO — text at inline-start (right), photographed model at left */}
-      <section className="relative overflow-hidden bg-[#ece7de]" aria-labelledby="hero-title">
-        <div className="absolute top-24 bottom-0 left-0 w-full sm:inset-y-0 sm:w-[64%]">
-          <NextImage
-            src="/editorial/hero-young.webp"
-            alt={home.heroImageAlt}
-            className="size-full object-cover object-left-top sm:object-[62%_0%]"
-            fetchPriority="high"
-            loading="eager"
-            width={1536}
-            height={1024}
-          />
-          <div className="absolute inset-0 bg-gradient-to-l from-[#ece7de] via-[#ece7de]/10 to-transparent sm:from-[#ece7de] sm:via-transparent" aria-hidden="true" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#ece7de]/95 via-transparent to-transparent sm:hidden" aria-hidden="true" />
-        </div>
-        <div className="relative mx-auto flex min-h-[600px] max-w-7xl items-end px-4 pt-32 pb-12 sm:min-h-[640px] sm:items-center sm:px-6 lg:min-h-[680px] lg:px-8">
-          <div className="max-w-md animate-slide-up sm:max-w-sm lg:max-w-md">
-            <h1 id="hero-title" className="text-[2.35rem] leading-[1.35] font-bold sm:text-5xl sm:leading-[1.3] lg:text-[3.6rem]">
-              <HeroTitle text={hero.title} />
-            </h1>
-            <span className="my-6 block h-px w-16 bg-ink" aria-hidden="true" />
-            <p className="text-lg text-ink-soft">{hero.subtitle}</p>
-            <div className="mt-8 flex flex-col items-start gap-5">
-              <ButtonLink href={hero.primary.href} size="lg" className="min-w-64 justify-between" icon={<Icon name="arrow" />}>
-                {hero.primary.label}
-              </ButtonLink>
-              <Link
-                href={hero.secondary.href}
-                className="flex items-center gap-3 text-[15px] underline decoration-accent decoration-2 underline-offset-[10px] hover:decoration-ink"
-              >
-                {hero.secondary.label}
-                <Icon name="arrow" className="size-4.5" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <StyleHero hero={hero} products={studioCatalog?.products ?? []} />
 
-      {/* CATEGORY STRIP */}
-      {categories.length ? (
-        <section aria-label="دسته‌بندی‌ها" className="border-b border-line-soft bg-bg">
-          <ul className="mx-auto flex max-w-7xl snap-x overflow-x-auto px-4 scrollbar-none sm:px-6 lg:px-8">
-            {categories.map((c, i) => (
-              <li key={c.slug} className={`min-w-40 flex-1 shrink-0 snap-start py-5 sm:min-w-44 ${i > 0 ? "border-r border-line-soft" : ""}`}>
-                <Link href={`/shop?category=${c.slug}`} className="group flex items-center justify-center gap-4 px-3">
-                  {c.image ? (
-                    <NextImage width={1600} height={2000} src={c.image.thumb} alt="" className="h-16 w-14 object-contain mix-blend-multiply motion-safe:transition-transform motion-safe:group-hover:scale-105 sm:h-20 sm:w-16" loading="lazy" />
-                  ) : null}
-                  <span className="flex flex-col gap-1">
-                    <span className="text-[17px] font-medium">{home.categoryLabels[c.slug] ?? c.name}</span>
-                    <Icon name="arrow" className="size-4.5 transition-transform group-hover:-translate-x-1" />
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
+      <CategoryDisplay categories={categories} />
 
       <RackTeaser />
 
@@ -130,18 +76,6 @@ export default async function HomePage() {
           </div>
         </section>
       ) : null}
-    </>
-  );
-}
-
-/** Break after the Persian comma like the approved composition («خوش‌پوش،» / «به سبک خودت»). */
-function HeroTitle({ text }: { text: string }) {
-  const index = text.indexOf("،");
-  if (index < 0) return <>{text}</>;
-  return (
-    <>
-      <span className="block">{text.slice(0, index + 1)}</span>
-      <span className="block">{text.slice(index + 1).trim()}</span>
     </>
   );
 }

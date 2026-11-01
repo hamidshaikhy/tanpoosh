@@ -24,8 +24,10 @@ test("mouse drag scrolls products without opening links and a normal click still
   await expect.poll(() => rail.evaluate(el => el.scrollLeft)).toBeGreaterThan(moved + 75);
   await page.mouse.up();
   await expect(page).toHaveURL(/:\d+\/$/);
-  const previous = page.getByRole("button", {name:"محصولات قبلی"});
-  if (await previous.isEnabled()) await previous.click();
+  // The drop can snap back to the first card while button state is updating.
+  // Reset with the rail's keyboard control, which also works at the start.
+  await rail.focus();
+  await page.keyboard.press("ArrowRight");
   await expect.poll(() => rail.evaluate(el => Math.abs(el.scrollLeft))).toBeLessThan(2);
   const link = rail.getByTestId("product-card").first().locator("h3 a");
   const href = await link.getAttribute("href");

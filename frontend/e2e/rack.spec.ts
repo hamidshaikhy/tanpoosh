@@ -38,8 +38,11 @@ test("rack remains usable on mobile with reduced motion",async({page})=>{
   await page.keyboard.press("Escape");
   await expect(page.getByTestId("rack-view-product")).toBeFocused();
   await page.setViewportSize({width:844,height:390});
-  const bounds=await page.getByTestId("rack-view-product").boundingBox();
-  expect(bounds!.y+bounds!.height).toBeLessThanOrEqual(390);
+  // Wait for the resized viewport's dynamic height and media query to reflow.
+  await expect.poll(async()=>{
+    const bounds=await page.getByTestId("rack-view-product").boundingBox();
+    return bounds!.y+bounds!.height;
+  }).toBeLessThanOrEqual(390);
 });
 
 test("pointer drag, wheel and garment picking navigate the 3D rack",async({page})=>{

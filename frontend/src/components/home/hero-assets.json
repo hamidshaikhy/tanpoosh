@@ -1,0 +1,20 @@
+{
+  "navy": {
+    "src": "/editorial/home/hero-navy.webp",
+    "width": 1672,
+    "height": 941,
+    "background": "#dbdecf"
+  },
+  "ivory": {
+    "src": "/editorial/home/hero-ivory.webp",
+    "width": 1672,
+    "height": 941,
+    "background": "#d9dbce"
+  },
+  "weekend": {
+    "src": "/editorial/home/hero-weekend.webp",
+    "width": 1672,
+    "height": 941,
+    "background": "#d9ddcd"
+  }
+}
