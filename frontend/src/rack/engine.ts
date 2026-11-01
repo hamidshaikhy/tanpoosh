@@ -23,7 +23,7 @@ export function createRackScene(container: HTMLDivElement, options: Options) {
   camera.position.set(0, options.productView?2.0:2.4, options.productView?8.3:10.1);
   camera.lookAt(0, options.productView?1.8:1.86, 0);
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, powerPreference: "high-performance" });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.75));
+  renderer.setPixelRatio(Math.min(Math.max(window.devicePixelRatio, 1.25), 2));
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFShadowMap;
   renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -109,8 +109,8 @@ export function createRackScene(container: HTMLDivElement, options: Options) {
     if(destroyed){map.dispose();return;}
     map.colorSpace=THREE.SRGBColorSpace;
     map.anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());
-    const front=new THREE.MeshStandardMaterial({map,roughness:.94,metalness:0,side:THREE.DoubleSide});
-    const back=new THREE.MeshStandardMaterial({color:data.color,roughness:1,side:THREE.DoubleSide});
+    const front=new THREE.MeshStandardMaterial({map,roughness:.94,metalness:0});
+    const back=new THREE.MeshStandardMaterial({color:data.color,roughness:1});
     const geometry=new THREE.BufferGeometry();
     geometry.setAttribute("position",new THREE.Float32BufferAttribute(data.positions,3));
     geometry.setAttribute("uv",new THREE.Float32BufferAttribute(data.uvs,2));
@@ -257,7 +257,7 @@ export function createRackScene(container: HTMLDivElement, options: Options) {
           const weight=localWeight*.78+pinned*.15;
           position.setXYZ(i,x+g.pullX*weight,y+g.pullY*weight,z+Math.hypot(g.pullX,g.pullY)*localWeight*.23);
         }
-        position.needsUpdate=true;g.mesh.geometry.computeVertexNormals();g.deformed=deforming;
+        position.needsUpdate=true;g.mesh.geometry.computeVertexNormals();g.mesh.geometry.computeBoundingSphere();g.deformed=deforming;
       }
       const sway=reducedMotion.matches?0:THREE.MathUtils.clamp(-velocity*.018-g.pullX*.13,-.14,.14);
       g.pivot.rotation.z=smooth(g.pivot.rotation.z,sway,grabbed?20:7);

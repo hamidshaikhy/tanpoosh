@@ -21,6 +21,11 @@ the registered product silhouettes with navigation and purchase intact.
 The mesh surfaces are reconstructed from the existing front photographs, with
 rounded thickness and a plain fabric-colored rear surface. They are not scanned
 garment models and cannot reveal unphotographed construction or back details.
+Both surfaces share their seam vertices. Conforming triangulation fills the
+entire silhouette, so pulling the cloth cannot leave a disconnected outline
+behind. The outline is smoothed and slightly inset in UV space to avoid sampling
+the photographic background. `geometry.test.ts` checks closed edges, winding,
+nondegenerate faces, volume and shared seams for all eight garments.
 The source product photographs retain their dimensions and colors and are
 encoded as high-quality WebP (92) for delivery, reducing image payload by 91%.
 The registered textures and closed mesh snapshots are stored in `public/rack/`;
@@ -30,6 +35,8 @@ No video frames or external shop's branding are used as product assets.
 Validation: `npm run typecheck`, `npm test`, `npm run build` (separate build
 directory while development is running), and `node scripts/check-rack.mjs`.
 The latter checks the running local shop without reseeding accounts or fixtures.
+`scripts/repair-rack-geometry.mjs` upgrades legacy garment meshes and regenerates
+the matching lightweight vector outlines; already repaired meshes are preserved.
 
 Run `node scripts/capture-rack-readme.mjs` from `frontend/` to refresh the desktop,
 drag, product, cart, homepage-promotion and mobile screenshots in
