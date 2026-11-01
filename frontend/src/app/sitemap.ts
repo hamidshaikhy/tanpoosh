@@ -8,7 +8,7 @@ export const dynamic = "force-dynamic";
 
 /** Public, indexable pages only (no account/checkout/admin/private data). */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const entries: MetadataRoute.Sitemap = ["", "/shop", "/collections", "/studio", "/pages/about", "/pages/contact", "/pages/shipping", "/pages/returns", "/pages/size-guide", "/pages/privacy", "/pages/terms"].map((p) => ({
+  const entries: MetadataRoute.Sitemap = ["", "/shop", "/collections", "/studio", "/rack", "/pages/about", "/pages/contact", "/pages/shipping", "/pages/returns", "/pages/size-guide", "/pages/privacy", "/pages/terms"].map((p) => ({
     url: `${SITE}${p}`,
     changeFrequency: "weekly",
   }));

@@ -18,6 +18,7 @@ export const NAV_LINKS = [
   { href: "/shop", label: nav.clothing },
   { href: "/collections", label: nav.collections },
   { href: "/studio", label: nav.studio },
+  { href: "/rack", label: "رگال" },
 ];
 
 export function Header({ announcement }: { announcement: string }) {

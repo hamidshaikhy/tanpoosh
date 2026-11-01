@@ -1,0 +1,25 @@
+.rack-teaser-section{display:grid;grid-template-columns:.85fr 1.15fr;max-width:1280px;margin:12px auto 64px;border:1px solid var(--line);background:#e9e8df;min-height:440px;overflow:hidden;isolation:isolate}
+.rack-teaser-copy{padding:64px 44px 48px;display:flex;align-items:flex-start;flex-direction:column;justify-content:center;position:relative;z-index:2}
+.rack-teaser-label{font-size:12px;display:flex;align-items:center;gap:8px;color:var(--ink-soft)}
+.rack-teaser-dot{width:7px;height:7px;border-radius:100%;background:#6b7850;box-shadow:0 0 0 4px #6b785013}
+.rack-teaser-copy h2{font-size:clamp(30px,3.2vw,44px);font-weight:650;margin:20px 0 12px;line-height:1.65}
+.rack-teaser-copy p{font-size:14px;line-height:2.2;max-width:350px;color:var(--ink-soft)}
+.rack-teaser-cta{margin-top:26px;display:flex;gap:38px;align-items:center;justify-content:space-between;background:var(--ink);color:var(--bg);padding:14px 20px;font-size:14px;transition:background .2s}
+.rack-teaser-cta:hover{background:#3c4234}.rack-teaser-note{font-size:11px;color:#66685d;margin-top:18px}
+.rack-teaser-preview{display:block;position:relative;overflow:hidden;min-height:420px;background:radial-gradient(ellipse at 50% 40%,#f3f2e980,transparent 70%);direction:ltr;perspective:1200px}
+.rack-teaser-plaque{position:absolute;top:28px;left:50%;transform:translateX(-50%) rotate(-2deg);background:linear-gradient(100deg,#bfa27a,#dcc6a0 45%,#c6aa81);padding:14px 20px 10px;border-radius:4px;box-shadow:0 4px 8px #35372d0a;text-align:center;z-index:2}
+.rack-teaser-plaque::before,.rack-teaser-plaque::after{content:"";position:absolute;bottom:100%;height:70px;width:1px;background:#777866;transform-origin:bottom;left:15px;transform:rotate(-10deg)}
+.rack-teaser-plaque::after{left:auto;right:15px;transform:rotate(10deg)}.rack-teaser-logo{width:83px;height:auto}.rack-teaser-plaque span{display:block;font-size:8px;margin-top:3px;color:#514836}
+.rack-teaser-rail{position:absolute;top:118px;left:-2%;width:104%;height:4px;background:linear-gradient(#f9faf5,#b1b4ad 40%,#656961 70%,#c4c7c0);box-shadow:0 1px 2px #0002}
+.rack-teaser-garments{position:absolute;top:120px;bottom:56px;left:-2%;width:104%;display:flex;align-items:flex-start;justify-content:center;transform-style:preserve-3d}
+.rack-teaser-garment{width:21%;height:100%;position:relative;transform-style:preserve-3d;transform:rotateY(57deg);transition:transform .9s cubic-bezier(.16,1,.3,1)}
+.rack-teaser-garment:nth-child(2){transform:rotateY(60deg);width:17%}.rack-teaser-garment:nth-child(4){transform:rotateY(64deg)}
+.rack-teaser-garment.rack-teaser-center{transform:translateZ(34px) rotateY(-6deg);width:30%;margin:0 -2%}
+.rack-teaser-preview:hover .rack-teaser-garment.rack-teaser-center{transform:translateZ(42px) rotateY(9deg)}.rack-teaser-preview:hover .rack-teaser-garment:first-child{transform:rotateY(42deg)}
+.rack-teaser-hanger{position:absolute;top:-4px;left:18%;width:64%;height:37px;color:#917047;z-index:-1}
+.rack-teaser-cloth{width:100%;height:calc(100% - 30px);position:relative;top:30px;object-fit:contain;filter:drop-shadow(2px 3px 2px #2222)}
+.rack-teaser-shadow{position:absolute;bottom:-8px;left:20%;width:65%;height:12px;transform:rotateX(65deg);background:#292c2142;filter:blur(9px);border-radius:50%}
+.rack-teaser-explore{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:9px;font-size:11px;color:#62675c;direction:rtl}.rack-teaser-explore svg{width:15px}
+@media(max-width:900px){.rack-teaser-section{margin:0 20px 48px}.rack-teaser-copy{padding:36px 24px}.rack-teaser-preview{min-height:380px}.rack-teaser-copy h2{font-size:30px}}
+@media(max-width:640px){.rack-teaser-section{grid-template-columns:1fr;margin:0 16px 40px}.rack-teaser-copy{padding:28px 24px 10px}.rack-teaser-copy h2{font-size:32px;margin-top:16px}.rack-teaser-copy p{font-size:13px}.rack-teaser-preview{min-height:330px;grid-row:2}.rack-teaser-copy .rack-teaser-cta{margin-top:18px}.rack-teaser-note{display:none}.rack-teaser-plaque{top:18px;padding:8px 14px}.rack-teaser-plaque .rack-teaser-logo{width:65px}.rack-teaser-rail{top:90px}.rack-teaser-garments{top:92px;bottom:45px}}
+@media(prefers-reduced-motion:reduce){.rack-teaser-garment,.rack-teaser-cta{transition:none}}

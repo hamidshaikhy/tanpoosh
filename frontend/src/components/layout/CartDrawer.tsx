@@ -13,12 +13,12 @@ import { useUI } from "@/lib/ui-store";
 
 import { CartLineRow } from "../cart/CartLineRow";
 
-export function CartDrawer() {
+export function CartDrawer({ side = "end" }: { side?: "start" | "end" } = {}) {
   const open = useUI((s) => s.cartOpen);
   const close = useUI((s) => s.closeCart);
   const { data: cart, isLoading, isError, error, refetch } = useCart();
   return (
-    <Dialog open={open} onClose={close} title={`${bag.miniTitle} (${faDigits(cart?.items.length ?? 0)})`} side="end">
+    <Dialog open={open} onClose={close} title={`${bag.miniTitle} (${faDigits(cart?.items.length ?? 0)})`} side={side}>
       <div className="flex h-full flex-col">
         <div className="flex-1 px-5 py-4">
           {isLoading ? <LoadingBlock /> : null}

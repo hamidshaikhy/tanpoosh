@@ -2,6 +2,7 @@ import NextImage from "next/image";
 import Link from "next/link";
 import { connection } from "next/server";
 
+import { RackTeaser } from "@/components/home/RackTeaser";
 import { ProductRail } from "@/components/home/ProductRail";
 import { LookDiscovery } from "@/components/home/LookDiscovery";
 import { EyewearEdit } from "@/components/home/EyewearEdit";
@@ -88,6 +89,8 @@ export default async function HomePage() {
           </ul>
         </section>
       ) : null}
+
+      <RackTeaser />
 
       {/* EVERYDAY PICKS */}
       <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8" aria-labelledby="picks-title">
